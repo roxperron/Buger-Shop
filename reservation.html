@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Burger shop</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.ico">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+
+<body>
+    <!-- NAVIGATION START -->
+    <header>
+        <div class="menuNav">
+            <h1><img class="logo" src="img/logo-burger-shop.png" alt="Un personnage burger sur une planche à roulette">
+            </h1>
+            <nav class="menuResponsive">
+                <ul class="menuList">
+                    <li><a class="linkNav" href="index.html">Menu</a></li>
+                    <li><a class="linkNav" href="reservation.html">Réservation</a></li>
+                    <li><a class="linkNav" href="restaurant.html">Restaurant</a></li>
+                    <li class="principalBTN"><a class="linkNav" href="macommande.html">Ma commande</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- NAVIGATION END -->
+    <!-- FORM START  -->
+    <main class="container">
+        <h1>Veuillez saisir vos informations:</h1>
+        <div class="flex-form">
+
+            <form action="confirmation.html" id="customerInforamtion" class="formReservation">
+                <fieldset>
+                    <legend>Vos informations personnelles</legend>
+                    <label for="firstName">Prénom:*</label>
+                    <input required id="firstName" type="text" name="firstName">
+                    
+                    <label for="lastName">Nom de famille:*</label>
+                    <input required id="lastName" type="text" name="lastName">
+                    <label for="phoneNumber">Numéro de téléphone:*</label>
+                    <input class="phonenumber" required id="phoneNumber" type="tel" name="phoneNumber"
+                        placeholder="418-123-4567">
+                    <label for="numberPeople">Nombre de personnes:*</label>
+                    <input class="people" required id="numberPeople" type="number" name="numberPeople" value="1">
+                    <label for="reservationDate">Date:*</label>
+                    <input required id="reservationDate" type="date" name="reservationDate">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Votre réservation</legend>
+
+                    <label>Préférence:*</label>
+                    <div class="preference">
+                        <label for="diningRoom">Salle à manger</label>
+                        <input id="diningRoom" type="radio" name="diningRoom" value="diningRoom" checked>
+
+                        <label for="terrace">Terrasse</label>
+                        <input id="terrace" type="radio" name="terrace" value="terrace">
+                    </div>
+
+                    <label>Heure de la réservation:*</label>
+                    <div class="reservation-hour">
+                        <label for="reservationDinner">Heure de dîner:</label>
+                        <select name="reservationDinner" id="reservationDinner">
+                            <option selected value="dinner1">12:00</option>
+                            <option value="dinner2">12:30</option>
+                            <option value="dinner3">13:00</option>
+                            <option value="dinner4">13:30</option>
+                        </select>
+
+                        <label for="reservationSupper">Heure de souper:</label>
+                        <select name="reservationSupper" id="reservationSupper">
+                            <option selected value="supper1">17:00</option>
+                            <option value="supper2">17:30</option>
+                            <option value="supper3">18:00</option>
+                            <option value="supper4">18:30</option>
+                            <option value="supper5">19:00</option>
+                            <option value="supper6">19:30</option>
+                            <option value="supper7">20:00</option>
+                            <option value="supper8">20:30</option>
+                            <option value="supper9">21:00</option>
+                        </select>
+                    </div>
+
+                    <textarea class="comment" id="comment" name="comment" cols="45" rows="2"
+                        maxlength="250">Commentaire:</textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Ne manquer rien sur les nouveautés du Burher Shop</legend>
+                    <div class="newsletter">
+                        <input id="subscription" type="checkbox" name="subscription" checked>
+                        <label for="subscription">S'abonner à l'infolettre</label>
+
+                        <label for="email">Courriel:</label>
+                        <input class="email" id="email" type="email" name="email" placeholder="burgershop@gmail.com">
+                    </div>
+                </fieldset>
+
+                <div class="form-btn">
+                    <input class="principalBTN" value="Réserver" type="submit">
+                    <input class="principalBTN" type="reset" value="Recommencer">
+                </div>
+            </form>
+        </div>
+        <!-- FORM END  -->
+    </main>
+    <!-- FOOTER -->
+    <div>
+        <footer class="footer">
+            <p><strong>Burger Shop:</strong> 1660 Boul. de l'Entente, Québec</p>
+            <address><a class="principalBTN telephoneBTN" href="tel:4181234567">418-123-4567</a></address>
+        </footer>
+        <div class="realisation">
+            <p> Site réalisé par : <strong>Roxanne Perron</strong> | Dans le cadre du cours AEC en
+                Développement Web (front-end) - Cégep
+                de
+                Trois-Rivière</p>
+        </div>
+    </div>
+</body>
+
+</html>
