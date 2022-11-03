@@ -1,6 +1,9 @@
 # TP3_RoxPerron
 https://gitlab.com/roxperron/tp3_roxperron
 
+Description: 
+Burger Shop is the final project of the Interface Integration 1 course. This project required us to reproduce a mock-up by applying HTML, CSS Grid, CSS Flexbox and perform the responsive with media queries.
+
 ## Getting started
 
 To make it easy for you to get started with GitLab, here's a list of recommended next steps.
